@@ -109,7 +109,7 @@ pip install pandas
 ### 2. Run the Script
 
 ```bash
-python script.py
+python main.py
 ```
 
 ---
