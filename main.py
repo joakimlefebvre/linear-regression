@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 
 
@@ -34,7 +33,7 @@ def step_gradient(b, m, df, learning_rate):
         y = df.y[i]
         # Get the direction
         # Partial derivative b
-        b_grad += (y - ((m * x) + b))
+        b_grad += -(2 / N) * (y - ((m * x) + b))
         # Partial derivative m
         m_grad += -(2 / N) * x * (y - ((m * x) + b))
     # Update b and m
